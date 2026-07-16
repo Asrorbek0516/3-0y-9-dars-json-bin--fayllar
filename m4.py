@@ -1,0 +1,21 @@
+import json
+
+data = [
+    {
+        "ism": "Ali","telefon": +998954621325,"shahar": "Toshkent"
+    },
+    {
+        "ism": "Ali","telefon": +998883031005,"shahar": "Buxoro"
+    },
+    {
+        "ism": "Bek","telefon": +998933654789,"shahar": "Fargona"
+    },
+    {
+        "ism": "Vali","telefon": +998974628375,"shahar": "Namangan"
+    }
+]
+
+with open("info.json", 'w') as file:
+    json.dump(data,file,indent=4)
+
+print("Muvaffaqiyatli yozildi")
